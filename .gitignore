@@ -2,7 +2,7 @@
 // File: symarray.c
 // ============================================================================
 // Programmer: Therese Obara
-// Date: 02/08/2018
+// Date: 03/15/2018
 // Class: CSCI 223 ("C Programming for Mathematics and Science")
 // Time: T/Th 4:30pm
 // Instructor: Prof. Edwards
@@ -20,3 +20,73 @@
 //
 // ============================================================================
 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+// ============ main ===========================================================
+//
+// =============================================================================
+
+int main(void)
+{
+  auto int arrayInts[];
+  auto int numInts;
+  auto int index;
+  auto int symmetry;
+  
+  printf("How big should the array of ints be: ");
+  scanf("%d", &numInts);
+  if(scanf != 1)
+    {
+    printf("Error reading integer...");
+    exit(EXIT_FAILURE);
+  
+  for(index = 0; index < numInts; ++index)
+    {
+    printf("Index %d: ", index + 1);
+    scanf("%d", arrayInts[index]);
+    }
+    
+  symmetry = SymArray(arrayInts, numInts);
+  
+  if(symmetry != NULL)
+    {
+    printf("The array is symmetrical);
+    }
+   
+   else
+    {
+    printf("The array is not symmetrical);
+    }
+    
+    return 0;
+ } //end of main
+ 
+ 
+// ============ SymArray ========================================================
+//
+// ==============================================================================
+
+int SymArray (int array, int elements)
+{
+  auto int begin = 0;
+  auto int last = elements;
+  
+  while(begin < last)
+      {
+       if( *array(begin) == *array(last) )
+          {
+          ++begin
+          --last;
+          }
+       else
+          {
+          return NULL;
+          }
+      } 
+      
+  return 1;
+  
+ } //end of SymArray
+  
