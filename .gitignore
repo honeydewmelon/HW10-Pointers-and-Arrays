@@ -1,52 +1,22 @@
-# Prerequisites
-*.d
+// ============================================================================
+// File: symarray.c
+// ============================================================================
+// Programmer: Therese Obara
+// Date: 02/08/2018
+// Class: CSCI 223 ("C Programming for Mathematics and Science")
+// Time: T/Th 4:30pm
+// Instructor: Prof. Edwards
+// Project: HW10
+//
+// Description:
+//      This program that calls the function SymArray that takes as input the
+//      base address of an array of ints and the number of elements in the
+//      array. The function will return a value of one if the array is
+//      symmetrical, zero if not. (An array is symmetrical if its first element
+//      is equal to its last element, its second element equal to the
+//      next-to-the-last element, etc.) However, the function can only use
+//      pointers to make the determination, you cannot use the subscript
+//      operator.
+//
+// ============================================================================
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
