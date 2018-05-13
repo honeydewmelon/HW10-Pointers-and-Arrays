@@ -41,6 +41,7 @@ int main(void)
     {
     printf("Error reading integer...");
     exit(EXIT_FAILURE);
+    }
   
   for(index = 0; index < numInts; ++index)
     {
